@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/siv_image_1_Main"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_1_Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_0"
+        app:layout_constraintBottom_toBottomOf="@+id/siv_image_1_Main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/siv_image_1_Main"
+        app:layout_constraintTop_toTopOf="@+id/siv_image_1_Main" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/siv_image_2_Main"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/siv_image_1_Main"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_2_Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_0"
+        app:layout_constraintBottom_toBottomOf="@+id/siv_image_2_Main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/siv_image_2_Main"
+        app:layout_constraintTop_toTopOf="@+id/siv_image_2_Main" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mb_select_Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mb_compress_Main"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/siv_image_2_Main" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mb_compress_Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/compress_image"
+        app:layout_constraintBottom_toBottomOf="@+id/mb_select_Main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/mb_select_Main"
+        app:layout_constraintTop_toTopOf="@+id/mb_select_Main" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

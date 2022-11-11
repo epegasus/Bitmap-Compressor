@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Bitmap Compressor</string>
+    <string name="select_image">Select Image</string>
+    <string name="compress_image">Compress Image</string>
+    <string name="_0">0</string>
+</resources>
